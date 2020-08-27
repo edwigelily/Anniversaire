@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=PT+Serif&display=swap");
+​
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: url("../img/olena-sergienko-JjGLEN7T8xI-unsplash.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+main {
+  background-color: #ffffff;
+  width: 20vw;
+  height: auto;
+  padding: 30px;
+  margin-top: 3em;
+  border-radius: 10px;
+}
+
+/*style div*/​
+main div {
+  margin: 1em;
+}
+​
+/*style label*/
+main label {
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  color: blueviolet;
+  margin-bottom: 5em;
+}
+​
+/*style h1*/
+main h1 {
+  font-family: "PT Serif", sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+​
+/*style form*/
+​
+main form {
+  padding: 20px;
+}
+​
+main .bouton {
+  text-align: center;
+  margin-top: 3em;
+}
+​
+main input[type="text"],input[type="number"] {
+  padding: 5px;
+}
+​
+main .bouton input[type="submit"] {
+  font-family: "PT Serif", serif;
+  font-size: 1.1em;
+  height: auto;
+  padding: 5px;
+  background-color: #eecabd;
+  border-radius: 3px;
+  border: none;
+  border-bottom: 10px solid #fc8c47;
+  cursor: pointer;
+}
+​
+main .bouton input[type="submit"]:hover {
+  background-color: #f1f1f1;
+  color: #fc8c47;
+  transition-duration: 0.3s;
+}
