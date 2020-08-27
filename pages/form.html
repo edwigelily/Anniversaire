@@ -8,56 +8,66 @@
   </head>
   <body>
     <main>
-      <h1>Inscrivez - vous !!!</h1>
-      <form action="http://localhost/Anniversaire/traitements/traitement.php" method="post">
+      <h1>Formulaire d'inscription</h1>
+      <form
+        action="http://localhost/Anniversaire/traitements/traitement.php"
+        method="post"
+      >
         <div>
-            <label for="nom">Nom</label><br />
-            <input
-              type="text"
-              name="nom"
-              id="nom"
-              placeholder="Veuillez saisir votre nom"
-            />
-            <label for="nom">Prénom</label><br />
-            <input
-              type="text"
-              name="prenom"
-              id="prenom"
-              placeholder="Veuillez saisir votre prénom"
-            />
-          </div>
-          <div>
-            <label for="sexe">Sexe</label>
-            <input type="radio" name="sexe" value="homme" id="homme" />
-            <label for="homme">Homme</label>
-            <input type="radio" name="sexe" value="femme" id="femme" />
-            <label for="femme">Femme</label>
-          </div>
-          <div>
-            <label for="tel">N° de téléphone</label><br />
-            <input
-              type="text"
-              name="tel"
-              id="tel"
-              placeholder="Entrez votre numéro de téléphone"
-            />
-          </div>
-          <div>
-            <label for="invite">Seriez vous accompagné?</label><br />
-            <input
-              type="number"
-              name="quantity"
-              id="quantité"
-              min="0"
-              max="2"
-              placeholder="Entrez un nombre (Max 2)"
-            />
-          </div>
+          <label for="nom">Nom</label><br />
+          <input
+            type="text"
+            name="nom"
+            id="nom"
+            required
+            placeholder="Veuillez saisir votre nom"
+          />
+          <label for="nom">Prénom</label><br />
+          <input
+            type="text"
+            name="prenom"
+            id="prenom"
+            required
+            placeholder="Veuillez saisir votre prénom"
+          />
+        </div>
+        <div>
+          <label for="sexe">Sexe</label><br />
+          <input type="radio" name="sexe" value="homme" id="homme" required />
+          <label for="homme">Homme</label>
+          <input type="radio" name="sexe" value="femme" id="femme" required />
+          <label for="femme">Femme</label>
+        </div>
+        <div>
+          <label for="tel">N° de téléphone</label><br />
+          <input
+            type="text"
+            name="tel"
+            id="tel"
+            required
+            placeholder="Entrez votre numéro de téléphone"
+          />
+        </div>
+        <div>
+          <label for="invite">Seriez-vous</label><br />
+          <input type="radio" name="seul" />
+          <label for="seul">Seul</label><br />
+          <input type="radio" name="accompagne" />
+          <label for="acompagne">Accompagné?</label>
+          <input
+            type="number"
+            name="quantity"
+            id="quantité"
+            min="0"
+            max="2"
+            required
+            placeholder="Entrez un nombre (Max 2)"
+          />
+        </div>
 
-          <div class="bouton">
-            <input type="submit" value="Connexion" />
-          </div>
-  
+        <div class="bouton">
+          <input type="submit" value="Connexion" />
+        </div>
       </form>
     </main>
   </body>
